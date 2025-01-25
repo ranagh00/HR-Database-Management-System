@@ -70,6 +70,58 @@ InstructorID: Foreign key referencing Instructors(InstructorID)
 
 
 
+## Data Insertion Overview
+This script effectively populates the HR database schema with test data, ensuring that the relationships and constraints between tables are properly utilized. Below is a summary of the key components and their integrity:
+
+1.**Departments Table** 
+
+Populates with 10 departments, each linked to a ManagerID.
+
+Example:
+
+HR is managed by EmployeeID 1.
+
+IT is managed by EmployeeID 3.
+
+2. **Employees Table**
+
+Populates with 10 employees across various departments.
+
+Salaries are assigned with non-negative values as per the CHECK constraint.
+
+Example:
+
+John Doe is in Department 1 (HR) with a salary of 50,000.
+
+3. **Instructors Table**
+   
+Populates with 10 instructors, each with a first and last name.
+
+Example:
+
+Sarah Johnson and James Smith are instructors.
+
+4. **TrainingCourses Table**
+Populates with 10 courses linked to instructors by InstructorID.
+
+Date fields utilize TO_DATE for proper formatting.
+
+Example:
+
+"Leadership Skills" is taught by Instructor 1 (Sarah Johnson) from 2023-11-05 to 2023-11-07.
+
+5. **LeaveRequests Table**
+    
+Populates with 5 leave requests associated with employees via EmployeeID.
+
+Includes status values (Pending, Approved) as constrained by the CHECK constraint.
+
+Example:
+
+EmployeeID 1 (John Doe) has an "Approved" leave request from 2023-10-10 to 2023-10-14.
+
+
+
 ## How to Use
 1. Run the `DDL/CreateTables.sql` file to create the schema.
 2. Use the `DML` scripts to populate and modify (insert-delete) data.
