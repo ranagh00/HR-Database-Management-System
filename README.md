@@ -11,7 +11,7 @@ HR-Oracle-Database-Project/ ├── DDL/ │ └── CreateTables.sql ├─
 - **Queries/Queries.sql**: Queries for retrieving data.
 
 
-##Schema Details
+## Schema Details
 The provided SQL script establishes the schema for an HR database, incorporating foundational entities such as departments, employees, leave requests, instructors, and training courses. Below is a structured summary and key points about each table:
 
 1. Departments Table
