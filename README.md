@@ -17,11 +17,13 @@ The provided SQL script establishes the schema for an HR database, incorporating
 1. **Departments Table**
 *Columns:*
 DepartmentID: Primary key, auto-generated identity column.
+
 DepartmentName: Name of the department, must be unique.
+
 ManagerID: Nullable, can be used to reference a manager (if applicable)
 
 
-2. **Employees Table**
+3. **Employees Table**
 *Columns:*
 EmployeeID: Primary key, auto-generated identity column.
 FirstName, LastName: Non-nullable fields for employee names.
@@ -29,7 +31,7 @@ DepartmentID: Foreign key referencing Departments(DepartmentID).
 Salary: Includes a constraint to ensure non-negative values
 
 
-3. **LeaveRequests Table**
+4. **LeaveRequests Table**
 *Columns:*
 LeaveID: Primary key, auto-generated identity column.
 EmployeeID: Foreign key referencing Employees(EmployeeID).
@@ -38,7 +40,7 @@ Reason: Optional, reason for leave.
 Status: Includes a check constraint to allow only specified values (Pending, Approved, Rejected)
 
 
-4. **Instructors Table**
+5. **Instructors Table**
 *Columns:*
 InstructorID: Primary key, auto-generated identity column.
 FirstName, LastName: Non-nullable fields for instructor names.
