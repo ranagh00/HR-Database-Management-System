@@ -17,7 +17,7 @@ The provided SQL script establishes the schema for an HR database, incorporating
 1. **Departments Table**
 *Columns:*
 
-DepartmentID: Primary key, auto-generated identity column.
+-DepartmentID: Primary key, auto-generated identity column.
 
 DepartmentName: Name of the department, must be unique.
 
