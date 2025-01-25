@@ -70,8 +70,28 @@ The provided SQL script establishes the schema for an HR database, incorporating
 
 
 
-## Data Insertion Overview
-This script effectively populates the HR database schema with test data, ensuring that the relationships and constraints between tables are properly utilized. Below is a summary of the key components and their integrity:
+## Data Insert 
+
+The DML_InsertData.sql file comprises a collection of Data Manipulation Language (DML) commands designed to insert, update, and manage data across multiple tables within an HR database. This structured script ensures that all data relationships, constraints, and dependencies are properly handled, making it a comprehensive tool for initializing and managing the database.
+
+
+- **Key Features of the DML_InsertData.sql File**
+  
+*Referential Integrity:*
+
+Ensures that foreign key relationships between tables are respected (e.g., DepartmentID in Employees, InstructorID in TrainingCourses).
+
+*Constraint Compliance:*
+
+Adheres to constraints such as non-negative salaries in the Employees table and valid statuses in the LeaveRequests table.
+
+*Date Formatting:*
+
+Utilizes TO_DATE for consistent handling of date fields, ensuring compatibility across systems.
+
+*Logical Associations:*
+
+Links managers, employees, departments, instructors, and courses effectively for comprehensive data representation.
 
 1.**Departments Table** 
 
@@ -104,8 +124,9 @@ Populates with 5 leave requests associated with employees via EmployeeID.
 Includes status values (Pending, Approved) as constrained by the CHECK constraint.
 
 
+## Queries
 
-
+QUERIES.sql file offers a wide range of SQL queries designed to analyze and report on various aspects of the HR database. Here's a refined and categorized overview of the provided queries to enhance clarity and understanding
 
 ## How to Use
 1. Run the `DDL/CreateTables.sql` file to create the schema.
