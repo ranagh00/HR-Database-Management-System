@@ -10,8 +10,7 @@ This repository contains SQL scripts for managing an HR Oracle Database. The pro
 
 
 ## Structure Of Project
-## Database Schema Creation
-
+[## Database Schema Creation]
 
 
 ## Database Schema Creation
