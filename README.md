@@ -75,54 +75,45 @@ The provided SQL script establishes the schema for an HR database, incorporating
 The DML_InsertData.sql file comprises a collection of Data Manipulation Language (DML) commands designed to insert, update, and manage data across multiple tables within an HR database. This structured script ensures that all data relationships, constraints, and dependencies are properly handled, making it a comprehensive tool for initializing and managing the database.
 
 
-- **Key Features of the DML_InsertData.sql File**
-  
-*Referential Integrity:*
+1. **Departments Table**
+   
+Purpose: Inserts 10 departments, each linked to a specific manager.
 
-Ensures that foreign key relationships between tables are respected (e.g., DepartmentID in Employees, InstructorID in TrainingCourses).
 
-*Constraint Compliance:*
-
-Adheres to constraints such as non-negative salaries in the Employees table and valid statuses in the LeaveRequests table.
-
-*Date Formatting:*
-
-Utilizes TO_DATE for consistent handling of date fields, ensuring compatibility across systems.
-
-*Logical Associations:*
-
-Links managers, employees, departments, instructors, and courses effectively for comprehensive data representation.
-
-1.**Departments Table** 
-
-Populates with 10 departments, each linked to a ManagerID.
+Features: Ensures the ManagerID is valid, respecting foreign key relationships.
 
 
 2. **Employees Table**
 
-Populates with 10 employees across various departments.
+Purpose: Inserts 10 employees across various departments.
 
-Salaries are assigned with non-negative values as per the CHECK constraint.
-
+Features: Ensures salaries are non-negative, adhering to the CHECK constraint. The department information is populated, and relationships with other tables (such as Managers and LeaveRequests) are properly maintained.
 
 3. **Instructors Table**
-   
-Populates with 10 instructors, each with a first and last name.
 
+Purpose: Inserts 10 instructors, each with a first and last name.
+
+Features: Instructors are linked to courses in the TrainingCourses table via InstructorID.
 
 4. **TrainingCourses Table**
    
-Populates with 10 courses linked to instructors by InstructorID.
+Purpose: Inserts 10 courses, each linked to an instructor.
 
-Date fields utilize TO_DATE for proper formatting.
-
+Features: Ensures consistency with date fields using the TO_DATE function and links courses to specific instructors.
 
 5. **LeaveRequests Table**
-    
-Populates with 5 leave requests associated with employees via EmployeeID.
+   
+Purpose: Inserts 5 leave requests, each associated with an employee.
 
-Includes status values (Pending, Approved) as constrained by the CHECK constraint.
+Features: Status values (Pending, Approved) are constrained to ensure valid status entries. The EmployeeID links leave requests to specific employees.
 
+**Key Considerations:**
+
+Referential Integrity: The script ensures that all relationships between tables are properly maintained, particularly with the use of foreign keys like DepartmentID and InstructorID.
+
+Constraint Compliance: All constraints (e.g., non-negative salaries, valid statuses) are enforced to maintain data quality.
+
+Date Handling: The use of TO_DATE ensures that date fields are formatted consistently, making the database more portable across different systems.
 
 ## Queries
 
