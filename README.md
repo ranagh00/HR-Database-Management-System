@@ -13,7 +13,7 @@ This repository contains SQL scripts designed for managing an HR Oracle Database
 - [Data Insertion](https://github.com/ranagh00/HR-Database-Management-System?tab=readme-ov-file#data-insertion)
 - [Data Modification and Deletion](https://github.com/ranagh00/HR-Database-Management-System?tab=readme-ov-file#data-modification-and-deletion)
 - [SQL Queries](https://github.com/ranagh00/HR-Database-Management-System?tab=readme-ov-file#sql-queries)
--[Usage Instructions](https://github.com/ranagh00/HR-Database-Management-System/blob/main/README.md#usage-instructions)
+- [Usage Instructions](https://github.com/ranagh00/HR-Database-Management-System/blob/main/README.md#usage-instructions)
 
 
 ## Database Schema Creation
