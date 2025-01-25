@@ -10,9 +10,11 @@ This repository contains SQL scripts designed for managing an HR Oracle Database
 
 ## Structure Of Project
 - [Database Schema Creation](https://github.com/ranagh00/HR-Database-Management-System#database-schema-creation)
-- [Data Insert](https://github.com/ranagh00/HR-Database-Management-System?tab=readme-ov-file#data-insert)
-- [Data Delete/Update](https://github.com/ranagh00/HR-Database-Management-System#data-deleteupdate)
-- [Queries](https://github.com/ranagh00/HR-Database-Management-System#queries)
+- [Data Insertion](https://github.com/ranagh00/HR-Database-Management-System?tab=readme-ov-file#data-insertion)
+- [Data Modification and Deletion](https://github.com/ranagh00/HR-Database-Management-System?tab=readme-ov-file#data-modification-and-deletion)
+- [SQL Queries](https://github.com/ranagh00/HR-Database-Management-System?tab=readme-ov-file#sql-queries)
+-[Usage Instructions]
+
 
 ## Database Schema Creation
 The DDL_CreateTables.sql file establishes the schema for an HR database, incorporating foundational entities such as departments, employees, leave requests, instructors, and training courses. Below is a structured summary and key points about each table:
@@ -87,7 +89,7 @@ The `QUERIES.sql` file contains a range of SQL queries designed to retrieve, ana
 
 
 
-**Usage Instructions**
+## Usage Instructions
 
 To use this project, follow these steps:
 
