@@ -24,7 +24,7 @@ DepartmentName: Name of the department, must be unique.
 ManagerID: Nullable, can be used to reference a manager (if applicable)
 
 
-3. **Employees Table**
+2. **Employees Table**
 *Columns:*
 
 EmployeeID: Primary key, auto-generated identity column.
@@ -36,7 +36,7 @@ DepartmentID: Foreign key referencing Departments(DepartmentID).
 Salary: Includes a constraint to ensure non-negative values
 
 
-5. **LeaveRequests Table**
+3. **LeaveRequests Table**
 *Columns:*
 
 LeaveID: Primary key, auto-generated identity column.
@@ -50,7 +50,7 @@ Reason: Optional, reason for leave.
 Status: Includes a check constraint to allow only specified values (Pending, Approved, Rejected)
 
 
-7. **Instructors Table**
+4. **Instructors Table**
 *Columns:*
 
 InstructorID: Primary key, auto-generated identity column.
@@ -77,11 +77,6 @@ This script effectively populates the HR database schema with test data, ensurin
 
 Populates with 10 departments, each linked to a ManagerID.
 
-Example:
-
-HR is managed by EmployeeID 1.
-
-IT is managed by EmployeeID 3.
 
 2. **Employees Table**
 
@@ -89,26 +84,18 @@ Populates with 10 employees across various departments.
 
 Salaries are assigned with non-negative values as per the CHECK constraint.
 
-Example:
-
-John Doe is in Department 1 (HR) with a salary of 50,000.
 
 3. **Instructors Table**
    
 Populates with 10 instructors, each with a first and last name.
 
-Example:
-
-Sarah Johnson and James Smith are instructors.
 
 4. **TrainingCourses Table**
+   
 Populates with 10 courses linked to instructors by InstructorID.
 
 Date fields utilize TO_DATE for proper formatting.
 
-Example:
-
-"Leadership Skills" is taught by Instructor 1 (Sarah Johnson) from 2023-11-05 to 2023-11-07.
 
 5. **LeaveRequests Table**
     
@@ -116,9 +103,7 @@ Populates with 5 leave requests associated with employees via EmployeeID.
 
 Includes status values (Pending, Approved) as constrained by the CHECK constraint.
 
-Example:
 
-EmployeeID 1 (John Doe) has an "Approved" leave request from 2023-10-10 to 2023-10-14.
 
 
 
