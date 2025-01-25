@@ -91,9 +91,10 @@ The `QUERIES.sql` file contains a range of SQL queries designed to retrieve, ana
 
 ## Usage Instructions
 
-To use this project, follow these steps:
-
+**To use this project, follow these steps:**
 **Database Setup:**
+
+
 - **Execute the DDL_CreateTables.sql script to create the database schema.**
 **Data Insertion:**
 - **Run the DML_InsertData.sql script to populate the database with initial data.**
