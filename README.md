@@ -1,18 +1,18 @@
 # HR Oracle Database Project
 This repository contains SQL scripts for managing an HR Oracle Database. The project demonstrates database creation, data manipulation, and data retrieval in an HR context.
 
-## Project Structure
-HR-Oracle-Database-Project/ ├── DDL/ │ └── CreateTables.sql ├── DML/ │ ├── DML_InsertData.sql │ └── DML_DeleteUpdate.sql ├── Queries/ │ └── Queries.sql
 
 ## Description of Files
-- **DDL/CreateTables.sql**: Scripts to create the database schema.
-- **DML/DML_InsertData.sql**: Scripts for inserting data into the tables.
-- **DML/DML_DeleteUpdate.sql**: Scripts for updating and deleting data.
-- **Queries/Queries.sql**: Queries for retrieving data.
+- **DDL_CreateTables.sql**: Scripts to create the database schema.
+- **DML_InsertData.sql**: Scripts for inserting data into the tables.
+- **DML_DeleteUpdate.sql**: Scripts for updating and deleting data.
+- **Queries.sql**: Queries for retrieving data.
 
 
-## Schema Details
-The provided SQL script establishes the schema for an HR database, incorporating foundational entities such as departments, employees, leave requests, instructors, and training courses. Below is a structured summary and key points about each table:
+
+## Database Schema Creation
+
+The DDL_CreateTables.sql file establishes the schema for an HR database, incorporating foundational entities such as departments, employees, leave requests, instructors, and training courses. Below is a structured summary and key points about each table:
 
 1. **Departments Table**
 *Columns:*
@@ -115,14 +115,23 @@ Constraint Compliance: All constraints (e.g., non-negative salaries, valid statu
 
 Date Handling: The use of TO_DATE ensures that date fields are formatted consistently, making the database more portable across different systems.
 
+
+## Data Delete/Update 
+
+This SQL script is designed to update and delete records within the HR database. It contains commands to modify specific data entries, as well as remove unwanted data. 
+
+
 ## Queries
 
-QUERIES.sql file offers a wide range of SQL queries designed to analyze and report on various aspects of the HR database. Here's a refined and categorized overview of the provided queries to enhance clarity and understanding
+QUERIES.sql This file contains a range of SQL queries designed to retrieve, analyze, and report on various aspects of the HR database, such as employee details, department statistics, leave requests, and training course data.
+
+
 
 ## How to Use
-1. Run the `DDL/CreateTables.sql` file to create the schema.
-2. Use the `DML` scripts to populate and modify (insert-delete) data.
-3. Execute the queries in `Queries/Queries.sql` to retrieve insights.
+Run the DDL_CreateTables.sql file to create the schema.
+Use the DML_InsertData.sql script to populate the tables with initial data.
+Modify or delete records using the DML_DeleteUpdate.sql script.
+Execute the queries from the Queries.sql to retrieve and analyze the data.
 
 ## Author
 RANA ALGHAMDI
