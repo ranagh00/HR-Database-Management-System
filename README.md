@@ -93,14 +93,14 @@ The `QUERIES.sql` file contains a range of SQL queries designed to retrieve, ana
 
 To use this project, follow these steps:
 
-- **Database Setup:**
-Execute the DDL_CreateTables.sql script to create the database schema.
-- **Data Insertion:**
-Run the DML_InsertData.sql script to populate the database with initial data.
-- **Data Modification:**
-Use the DML_DeleteUpdate.sql script to update or delete records as needed.
-- **Data Retrieval and Analysis:**
-Execute the queries from Queries.sql to retrieve and analyze the HR data stored in the database.
+**Database Setup:**
+- **Execute the DDL_CreateTables.sql script to create the database schema.**
+**Data Insertion:**
+- **Run the DML_InsertData.sql script to populate the database with initial data.**
+**Data Modification:**
+- **Use the DML_DeleteUpdate.sql script to update or delete records as needed.**
+**Data Retrieval and Analysis:**
+- **Execute the queries from Queries.sql to retrieve and analyze the HR data stored in the database.**
 
 ## Author
 RANA ALGHAMDI
