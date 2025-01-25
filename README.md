@@ -89,5 +89,6 @@ The `QUERIES.sql` file contains a range of SQL queries designed to retrieve, ana
 3. Modify or delete records using the `DML_DeleteUpdate.sql` script.
 4. Execute the queries from the `Queries.sql` to retrieve and analyze the data.
 
+
 ## Author
 RANA ALGHAMDI
