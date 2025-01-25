@@ -12,9 +12,9 @@ This repository contains SQL scripts for managing an HR Oracle Database. The pro
 ## Structure Of Project
 [Database Schema Creation](https://github.com/ranagh00/HR-Database-Management-System#database-schema-creation)
 
-[Data Insert]([https://github.com/ranagh00/HR-Database-Management-System#database-schema-creation](https://github.com/ranagh00/HR-Database-Management-System#data-insert)
+[Data Insert](https://github.com/ranagh00/HR-Database-Management-System#database-schema-creation)
 
-[Data Delete/Update]([https://github.com/ranagh00/HR-Database-Management-System#database-schema-creation](https://github.com/ranagh00/HR-Database-Management-System#data-deleteupdate)
+[Data Delete/Update](https://github.com/ranagh00/HR-Database-Management-System#data-deleteupdate)
 
 [Queries](https://github.com/ranagh00/HR-Database-Management-System#queries)
 
