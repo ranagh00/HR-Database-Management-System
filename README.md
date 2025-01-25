@@ -1,5 +1,6 @@
 # HR Oracle Database Project
-This repository contains SQL scripts for managing an HR Oracle Database. The project demonstrates database creation, data manipulation, and data retrieval in an HR context.
+This repository contains SQL scripts designed for managing an HR Oracle Database. The project demonstrates the process of database creation, data manipulation, and data retrieval in an HR context, covering core HR operations such as managing employees, departments, leave requests, instructors, and training courses.
+
 
 ## Description of Files
 - **DDL_CreateTables.sql**: Scripts to create the database schema.
@@ -49,7 +50,7 @@ The DDL_CreateTables.sql file establishes the schema for an HR database, incorpo
    - **StartDate, EndDate**: Non-nullable fields for the course schedule.
    - **InstructorID**: Foreign key referencing Instructors(InstructorID)
 
-## Data Insert 
+## Data Insertion 
 The DML_InsertData.sql file comprises a collection of Data Manipulation Language (DML) commands designed to insert, update, and manage data across multiple tables within an HR database. This structured script ensures that all data relationships, constraints, and dependencies are properly handled, making it a comprehensive tool for initializing and managing the database.
 
 1. **Departments Table**
@@ -77,18 +78,27 @@ The DML_InsertData.sql file comprises a collection of Data Manipulation Language
 - **Constraint Compliance**: All constraints (e.g., non-negative salaries, valid statuses) are enforced to maintain data quality.
 - **Date Handling**: The use of TO_DATE ensures that date fields are formatted consistently, making the database more portable across different systems.
 
-## Data Delete/Update 
-This SQL script is designed to update and delete records within the HR database. It contains commands to modify specific data entries, as well as remove unwanted data. 
+## Data Modification and Deletion
+The DML_DeleteUpdate.sql script provides SQL statements for updating and deleting data records. This file contains operations for modifying existing records, removing outdated data, or adjusting employee and department information as needed.
 
-## Queries
+## SQL Queries
+
 The `QUERIES.sql` file contains a range of SQL queries designed to retrieve, analyze, and report on various aspects of the HR database, such as employee details, department statistics, leave requests, and training course data.
 
-## How to Use
-1. Run the `DDL_CreateTables.sql` file to create the schema.
-2. Use the `DML_InsertData.sql` script to populate the tables with initial data.
-3. Modify or delete records using the `DML_DeleteUpdate.sql` script.
-4. Execute the queries from the `Queries.sql` to retrieve and analyze the data.
 
+
+**Usage Instructions**
+
+To use this project, follow these steps:
+
+- **Database Setup:**
+Execute the DDL_CreateTables.sql script to create the database schema.
+- **Data Insertion:**
+Run the DML_InsertData.sql script to populate the database with initial data.
+- **Data Modification:**
+Use the DML_DeleteUpdate.sql script to update or delete records as needed.
+- **Data Retrieval and Analysis:**
+Execute the queries from Queries.sql to retrieve and analyze the HR data stored in the database.
 
 ## Author
 RANA ALGHAMDI
