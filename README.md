@@ -19,54 +19,54 @@ The provided SQL script establishes the schema for an HR database, incorporating
 
 - **DepartmentID**: Primary key, auto-generated identity column.
 
-DepartmentName: Name of the department, must be unique.
+- **DepartmentName**: Name of the department, must be unique.
 
-ManagerID: Nullable, can be used to reference a manager (if applicable)
+- **ManagerID**: Nullable, can be used to reference a manager (if applicable)
 
 
 2. **Employees Table**
 *Columns:*
 
-EmployeeID: Primary key, auto-generated identity column.
+- **EmployeeID**: Primary key, auto-generated identity column.
 
-FirstName, LastName: Non-nullable fields for employee names.
+- **FirstName, LastName**: Non-nullable fields for employee names.
 
-DepartmentID: Foreign key referencing Departments(DepartmentID).
+- **DepartmentID**: Foreign key referencing Departments(DepartmentID).
 
-Salary: Includes a constraint to ensure non-negative values
+- **Salary**: Includes a constraint to ensure non-negative values
 
 
 3. **LeaveRequests Table**
 *Columns:*
 
-LeaveID: Primary key, auto-generated identity column.
+- **LeaveID**: Primary key, auto-generated identity column.
 
-EmployeeID: Foreign key referencing Employees(EmployeeID).
+- **EmployeeID**: Foreign key referencing Employees(EmployeeID).
 
-StartDate, EndDate: Non-nullable date range for leave.
+- **StartDate, EndDate**: Non-nullable date range for leave.
 
-Reason: Optional, reason for leave.
+- **Reason**: Optional, reason for leave.
 
-Status: Includes a check constraint to allow only specified values (Pending, Approved, Rejected)
+- **Status**: Includes a check constraint to allow only specified values (Pending, Approved, Rejected)
 
 
 4. **Instructors Table**
 *Columns:*
 
-InstructorID: Primary key, auto-generated identity column.
+- **InstructorID**: Primary key, auto-generated identity column.
 
-FirstName, LastName: Non-nullable fields for instructor names.
+- **FirstName, LastName**: Non-nullable fields for instructor names.
 
 5.**TrainingCourses Table**
 *Columns:*
 
-CourseID: Primary key, auto-generated identity column.
+- **CourseID**: Primary key, auto-generated identity column.
 
-CourseName: Non-nullable name of the course.
+- **CourseName**: Non-nullable name of the course.
 
-StartDate, EndDate: Non-nullable fields for the course schedule.
+- **StartDate, EndDate**: Non-nullable fields for the course schedule.
 
-InstructorID: Foreign key referencing Instructors(InstructorID)
+- **InstructorID**: Foreign key referencing Instructors(InstructorID)
 
 
 
